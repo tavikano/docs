@@ -16,6 +16,7 @@
       "to": "#5649F0"
     }
   },
+  "theme": "prism",
   "topbarLinks": [
     {
       "name": "Support",
@@ -36,7 +37,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.streampod.io"
     },
     {
       "name": "Community",
@@ -88,6 +89,7 @@
     "discord": "https://discord.com/invite/VcFM5VRnBH",
     "youtube": "https://www.youtube.com/@StreamPods",
     "linkedin": "https://www.linkedin.com/company/streampods", 
-    "facebook": "https://www.facebook.com/profile.php?id=61566246435555"
+    "facebook": "https://www.facebook.com/profile.php?id=61566246435555",
+    "website": "https://streampod.io"
   }
 }
