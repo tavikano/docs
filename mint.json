@@ -35,7 +35,7 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Welcome",
       "icon": "book-open-cover",
       "url": "https://docs.streampod.io"
     },
@@ -54,7 +54,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
+        "overview",
         "quickstart",
         "development"
       ]
