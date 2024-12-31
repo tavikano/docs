@@ -8,12 +8,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#5649F0",
+    "light": "#5649F0",
+    "dark": "#614F82",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#614F82",
+      "to": "#5649F0"
     }
   },
   "topbarLinks": [
@@ -23,8 +23,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://streampod.io"
+    "name": "Join StreamPod",
+    "url": "https://discord.com/invite/VcFM5VRnBH"
   },
   "tabs": [
     {
@@ -40,13 +40,13 @@
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "https://discord.com/invite/VcFM5VRnBH"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://streampod.io/blog"
     }
   ],
   "navigation": [
@@ -85,8 +85,9 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "discord": "https://discord.com/invite/VcFM5VRnBH",
+    "youtube": "https://www.youtube.com/@StreamPods",
+    "linkedin": "https://www.linkedin.com/company/streampods", 
+    "facebook": "https://www.facebook.com/profile.php?id=61566246435555"
   }
 }
