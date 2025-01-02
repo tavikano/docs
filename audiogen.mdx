@@ -1,0 +1,62 @@
+# Voice Channel Commands Guide
+
+## Quick Start
+
+### Create and Use Voice Channel
+1. `/createvoice` - Creates a private voice channel
+2. Click the **Open Chat** bubble next to your new channel
+3. `/talk` - Begin voice interaction (5-minute session limit)
+4. `/leave` - End session when finished
+
+## Voice Channel Features
+
+### Privacy and Access
+- Creates a **private** voice channel under the "audio" category
+- Channel name is automatically generated (alphanumeric)
+- Only creator can access and manage by default
+- Additional users must be invited explicitly
+
+### Capabilities
+- Voice connection
+- Voice messaging
+- Speech interaction
+- Text chat transcripts
+- Voice agent engagement via `/talk`
+
+## Command Workflows
+
+### Voice Agent Flow
+1. `/createvoice` - Initialize channel
+2. `/talk` - Begin interaction
+3. `/leave` - End session
+
+### Sound Effects (SFX) Flow
+1. Create private thread:
+   - Use `/createvoice` or `/model`
+2. Generate audio:
+   - Use `/text_to_sfx`
+   - Set `duration` (default: 2s, max: 20s)
+   - Provide description for sound/music generation
+
+## Important Notes
+
+### Recommendations
+- Enable Discord's voice activity detection in settings
+- Use `/leave` command to properly end sessions
+- Unused capacity counts against your plan until `/leave` is used
+
+### Channel Management
+- Channel creation is instant
+- Private confirmation message includes channel name
+- Automatic placement in "audio" category
+- Text chat room maintains conversation transcripts
+
+### Troubleshooting
+
+If you see: "This command can only be used in a server!"
+- Solution: Use commands in `#audio-chat` channel, not in DMs
+
+### Inviting Users
+- Use @ mentions in the text chat room
+- Invited users can access voice agent chat
+- All conversations are transcribed in text chat

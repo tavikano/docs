@@ -1,86 +1,90 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Start building generative AI worklows with StreamPod AI'
 ---
 
-## Setup your development
+# StreamPod Quickstart Guide
 
-Learn how to update your docs locally and deploy them to the public.
+## Overview
 
-### Edit and preview
+StreamPod provides a powerful interface for interacting with various AI models through Discord. This guide will help you get started with text, image, and video generation capabilities.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
+## Features
 
-### Deploy your changes
+- **Diverse Models**: Access multiple AI models optimized for different tasks and use cases
+- **Multimodal Support**: Seamlessly combine text, images, and video in your interactions
+- **Private Threads**: Secure, personalized conversations with AI models
+- **Media Generation**: Create images, videos, and sound effects from text descriptions
 
-<AccordionGroup>
+## Getting Started
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
+### Creating a Private Chat
 
-</AccordionGroup>
+1. Navigate to the `#⁠model-chat` channel
+2. Type `/model` to select your preferred AI model
+3. Enter the newly created private thread
+   - Thread names are numerical by default unless a system prompt is specified
+   - Only you can see the thread creation message
+   - Additional users must be invited using the @ symbol
 
-## Update your docs
+### Basic Commands
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+#### Text Generation
+- Use `/model` to access text-based models
+- Optionally set a system prompt to define the model's behavior
 
-<CardGroup>
+#### Media Generation
+- `/text-to-image`: Generate images from text descriptions
+- `/text-to-video`: Create videos from text prompts
+- `/image-to-video`: Convert images to videos
+- `/text_to_sfx`: Generate sound effects and music
 
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
+#### Audio/Video Features
+- `/createvoice`: Initialize voice chat
+- `/talk`: Begin voice interaction
+- `/leave`: Exit voice chat
 
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
+## Usage Guidelines
 
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
+### Text and Vision Models
 
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
+1. Select your model with `/model`
+2. Set an optional system prompt
+3. Enter your prompt or upload media
+4. Wait for the model's response
 
-</CardGroup>
+### Media Generation
+
+#### Image Generation
+- Maximum prompt length: 1024 characters
+- Supported by models: Claude, Llama, and specialized image models
+
+#### Video Generation
+- Maximum prompt length: 512 characters
+- Image-to-video requirements:
+  - Resolution: 1280x720
+  - Format: JPEG or PNG (non-transparent)
+  - Compression recommended
+
+### Best Practices
+
+- For media generation, pre-prompt multimodal models with context
+- Keep track of your active threads in `#⁠model-chat`
+- Reference help commands for detailed guidance:
+  - `/model_help`: Text model assistance
+  - `/media_help`: Media generation help
+  - `/audio_help`: Audio feature support
+
+## Getting Help
+
+If you need assistance:
+- Contact `@StreamPod AI` via DM
+- Ask questions in `#⁠general-support`
+- Use the appropriate help commands for specific features
+
+## Advanced Tips
+
+- Use the channel menu to track private threads (indicated by a blinking dot)
+- Access thread names through the context menu (right-click)
+- For video understanding tasks, specifically use Nova Lite or Nova Pro models
+- Remember that all requests are processed in a queue system
