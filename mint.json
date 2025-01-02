@@ -24,7 +24,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Join StreamPod",
+    "name": "Join StreamPod's Discord",
     "url": "https://discord.com/invite/VcFM5VRnBH"
   },
   "tabs": [
@@ -58,7 +58,8 @@
         "quickstart",
         "modelchat",
         "mediagen",
-        "audiogen"
+        "audiogen", 
+        "pods"
       ]
     },
     {
