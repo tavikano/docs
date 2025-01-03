@@ -5,17 +5,6 @@ description: 'Start building generative AI worklows with StreamPod AI'
 
 # StreamPod Quickstart Guide
 
-## Overview
-
-StreamPod provides a powerful interface for interacting with various AI models through Discord. This guide will help you get started with text, image, and video generation capabilities.
-
-## Features
-
-- **Diverse Models**: Access multiple AI models optimized for different tasks and use cases
-- **Multimodal Support**: Seamlessly combine text, images, and video in your interactions
-- **Private Threads**: Secure, personalized conversations with AI models
-- **Media Generation**: Create images, videos, and sound effects from text descriptions
-
 ## Getting Started
 
 ### Creating a Private Chat
@@ -24,20 +13,21 @@ StreamPod provides a powerful interface for interacting with various AI models t
 2. Type `/model` to select your preferred AI model
 3. Enter the newly created private thread
    - Thread names are named numerically by default unless a system prompt is specified
-   - Only you can see the thread creation message
+   - Only you can see the thread creation message(ephemeral threads)
    - Additional users must be invited using the @ symbol
 
 ### Basic Commands
 
 #### Text Generation
 - Use `/model` to access text-based models
-- Optionally set a system prompt to define the model's behavior
+- Optionally set a system prompt to define the model's role and behavior
+- Model might refuse to load if the system prompt exceeds the character limit or if the system prompt does not meet the guidelines 
 
 #### Media Generation
 - `/text-to-image`: Generate images from text descriptions
 - `/text-to-video`: Create videos from text prompts
 - `/image-to-video`: Convert images to videos
-- `/text_to_sfx`: Generate sound effects and music
+- `/text-to-sfx`: Generate sound effects and music
 
 #### Voice Agent Features
 - `/createvoice`: Initialize voice chat
@@ -50,14 +40,17 @@ StreamPod provides a powerful interface for interacting with various AI models t
 
 1. Select your model with `/model`
 2. Set an optional system prompt plus optional parameterized settings and enter the private thread
-3. Enter your prompt or upload media
-4. Wait for the model's response
+3. Invite additional users using the @ symbol
+4. Enter your prompt or upload media
+5. Wait for the model's response
+6. Follow up with additional prompts or commands as needed
 
 ### Media Generation
 
 #### Image Generation
 - Maximum prompt length: 1024 characters
-- Pre-prompting supported by models: Claude, Llama, and specialized image models
+- Maximum image count: 3
+- Pre-prompting supported by models: Claude, Llama, and specialized Vision models
 
 #### Video Generation
 - Maximum prompt length: 512 characters
@@ -68,11 +61,11 @@ StreamPod provides a powerful interface for interacting with various AI models t
 
 ### Best Practices
 
-- For media generation, pre-prompt multimodal models with context and specific details
-- Use system prompts to guide the model's behavior
+- For media generation, pre-prompt multimodal models with context and specific details about the desired output. Details such as the character length, image count, shot type and resolution are crucial for optimal results.
+- Use system prompts to guide the model's role and behavior
 - Invite additional users to private threads using the @ symbol within the private thread
 - Image generation is parameterized by the model's input requirements and guidelines, including character limits. 
-- Use the image generator's parameters such as resolution, image count, prompt strength, and other model-specific parameters to optimize the output.
+- Use the image generator's parameters such as resolution, image count, prompt strength, and other model-specific parameters to optimize the output quality
 
 - Keep track of your active threads in `#⁠model-chat`
 - Reference help commands for detailed guidance:
@@ -83,9 +76,9 @@ StreamPod provides a powerful interface for interacting with various AI models t
 ## Getting Help
 
 If you need assistance:
-- Contact `@StreamPod AI` via DM
-- Ask questions in `#⁠general-support`
-- Use the appropriate help commands for specific features
+- Contact `@StreamPod AI` via DM using the @ symbol
+- Ask questions in <a href="https://discord.com/channels/1245569640265023572/1295950195439177748">`#⁠general-support`</a>
+- Use the appropriate `/` help commands for specific features
 - email us at support@streampod.ai
 
 ## Advanced Tips
@@ -93,7 +86,8 @@ If you need assistance:
 - Use the channel menu to track private threads (indicated by a blinking dot)
 - Access thread names through the context menu (right-click)
 - For video understanding tasks, specifically use Nova Lite or Nova Pro models
-- Remember that all video and image generation requests are processed in a queue system and include workflow analytics.  
+- Remember that all video and image generation requests are processed in a queue system and include workflow analytics
 - Use `/leave` to properly end voice chat sessions and avoid unnecessary resource consumption
 - Models might refuse to process requests if the prompt exceeds the character limit or if the model is busy processing other requests
 - Models might refuse to process requests if the prompt does not follow the model's input requirements and guidelines
+- Lower parameters models might hallucinate often or generate irrelevant content if the prompt is not specific enough or if the prompt is too vague
