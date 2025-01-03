@@ -30,24 +30,28 @@ We currently support the following multimodal models: Nova Lite/Pro, Reels & Can
 
 #### Image and Video Input
 
-- For Nova Lite/Pro (video-to-text):
-    - First, upload the video
-    - Provide a brief description of the video content on the prompt
-    - Prompt the model with the desired output
+For Nova Lite/Pro (video-to-text):
 
-- For Reels (text-to-video):
-    - Use `/text-to-video` to generate 6 seconds of video
-    - Use `/image-to-video` to convert images to videos
-    * Videos might take 5-6 minutes to generate
+- First, upload the video
+- Provide a brief description of the video content on the prompt
+- Prompt the model with the desired output
 
-- For Canvas (text-to-image):
-    - Use `/text-to-image` to generate images from text descriptions
-    * Depending on the amount of Images, generations might take 1-2 minutes to generate
+For Reels (text-to-video):
 
-- For Claude and Llama (multimodal vision models):
-    - First, upload the image
-    - Provide a brief description of the image content on the prompt
-    - Prompt the model with the desired output
+- Use `/text-to-video` to generate 6 seconds of video
+- Use `/image-to-video` to convert images to videos
+- Videos might take 5-6 minutes to generate
+
+For Canvas (text-to-image):
+
+- Use `/text-to-image` to generate images from text descriptions
+- Depending on the amount of Images, generations might take 1-2 minutes to generate
+
+For Claude and Llama (multimodal vision models):
+
+- First, upload the image
+- Provide a brief description of the image content on the prompt
+- Prompt the model with the desired output
 
 #### Character Limits
 
@@ -61,7 +65,7 @@ We currently support the following multimodal models: Nova Lite/Pro, Reels & Can
 
 ### Important Notes
 
-- Mediagen processes requests in an orderly queue
+- Mediagen processes requests in an orderly queue which include cool down periods 
 - Reference help commands under `/` commands for detailed guidance
 
 ### Need Support?
