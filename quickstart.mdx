@@ -20,10 +20,11 @@ StreamPod provides a powerful interface for interacting with various AI models t
 
 ### Creating a Private Chat
 
-1. Navigate to the `#⁠model-chat` channel
+1. Navigate to the <a href="https://discord.com/channels/1245569640265023572/1311515052385239061"> `#⁠model-chat`</a> channel
+1. Navigate to the <Link to="https://discord.com/channels/1245569640265023572/1311515052385239061"> `#⁠model-chat`</Link> channel
 2. Type `/model` to select your preferred AI model
 3. Enter the newly created private thread
-   - Thread names are numerical by default unless a system prompt is specified
+   - Thread names are named numerically by default unless a system prompt is specified
    - Only you can see the thread creation message
    - Additional users must be invited using the @ symbol
 
@@ -39,7 +40,7 @@ StreamPod provides a powerful interface for interacting with various AI models t
 - `/image-to-video`: Convert images to videos
 - `/text_to_sfx`: Generate sound effects and music
 
-#### Audio/Video Features
+#### Voice Agent Features
 - `/createvoice`: Initialize voice chat
 - `/talk`: Begin voice interaction
 - `/leave`: Exit voice chat
@@ -49,7 +50,7 @@ StreamPod provides a powerful interface for interacting with various AI models t
 ### Text and Vision Models
 
 1. Select your model with `/model`
-2. Set an optional system prompt
+2. Set an optional system prompt plus optional parameterized settings and enter the private thread
 3. Enter your prompt or upload media
 4. Wait for the model's response
 
@@ -57,7 +58,7 @@ StreamPod provides a powerful interface for interacting with various AI models t
 
 #### Image Generation
 - Maximum prompt length: 1024 characters
-- Supported by models: Claude, Llama, and specialized image models
+- Pre-prompting supported by models: Claude, Llama, and specialized image models
 
 #### Video Generation
 - Maximum prompt length: 512 characters
@@ -68,7 +69,12 @@ StreamPod provides a powerful interface for interacting with various AI models t
 
 ### Best Practices
 
-- For media generation, pre-prompt multimodal models with context
+- For media generation, pre-prompt multimodal models with context and specific details
+- Use system prompts to guide the model's behavior
+- Invite additional users to private threads using the @ symbol within the private thread
+- Image generation is parameterized by the model's input requirements and guidelines, including character limits. 
+- Use the image generator's parameters such as resolution, image count, prompt strength, and other model-specific parameters to optimize the output.
+
 - Keep track of your active threads in `#⁠model-chat`
 - Reference help commands for detailed guidance:
   - `/model_help`: Text model assistance
@@ -87,4 +93,7 @@ If you need assistance:
 - Use the channel menu to track private threads (indicated by a blinking dot)
 - Access thread names through the context menu (right-click)
 - For video understanding tasks, specifically use Nova Lite or Nova Pro models
-- Remember that all requests are processed in a queue system
+- Remember that all video and image generation requests are processed in a queue system and include workflow analytics.  
+- Use `/leave` to properly end voice chat sessions and avoid unnecessary resource consumption
+- Models might refuse to process requests if the prompt exceeds the character limit or if the model is busy processing other requests
+- Models might refuse to process requests if the prompt does not follow the model's input requirements and guidelines
