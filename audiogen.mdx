@@ -13,11 +13,12 @@
 ### Privacy and Access
 - Creates a **private** voice channel under the "audio" category
 - Channel name is automatically generated (alphanumeric)
-- Only creator can access and manage by default
+- Only channel creator can access, invite and manage by default
 - Additional users must be invited explicitly
 
 ### Capabilities
-- Voice connection
+- Real-time voice interaction
+- Interuptible voice sessions
 - Voice messaging
 - Speech interaction
 - Text chat transcripts
@@ -26,9 +27,11 @@
 ## Command Workflows
 
 ### Voice Agent Flow
-1. `/createvoice` - Initialize channel
-2. `/talk` - Begin interaction
-3. `/leave` - End session
+1. Go to <a href="https://discord.com/channels/1245569640265023572/1316766276051406888"> `#audio-chat` </a> channel
+2. `/createvoice` - Initialize channel
+3. Click **Join Voice** button
+4. `/talk` - Begin Voice Agent Interaction
+5. `/leave` - End session
 
 ### Sound Effects (SFX) Flow
 1. Create private thread:
@@ -59,4 +62,11 @@ If you see: "This command can only be used in a server!"
 ### Inviting Users
 - Use @ mentions in the text chat room
 - Invited users can access voice agent chat
-- All conversations are transcribed in text chat
+- All conversations are transcribed in the text chat
+
+## Best Practices
+- Use `/leave` to end sessions properly
+- Invite users using @ mentions
+- If session exceeds 5 minutes, use `/talk` to start a new session
+- Mind your surroundings for voice clarity
+- Mind your language and tone for respectful interactions
