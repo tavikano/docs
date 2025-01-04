@@ -24,7 +24,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Join StreamPod's Discord",
+    "name": "Join",
     "url": "https://discord.com/invite/VcFM5VRnBH"
   },
   "tabs": [
@@ -58,22 +58,7 @@
         "quickstart",
         "modelchat",
         "mediagen",
-        "audiogen", 
-        "pods"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "audiogen"
       ]
     }
   ],
