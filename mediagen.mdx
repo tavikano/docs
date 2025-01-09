@@ -1,74 +1,107 @@
-## Getting Started Privately
+# MediaGen Guide
 
-### Initial Setup
+## Quick Start
 
-1. Type `/model` to pick a model that suits your needs
-2. Enter the newly created **private** active Thread (If no System Prompt was entered previously, the thread name will be a numerical string)
-3. Type `/` to access media generation models and help commands:
-   - `text-to-video`
-   - `text-to-image`
-   - `image-to-text`
-4. Prompt the model with your request
+### Basic Setup
+1. Use `/model` to select your preferred model
+2. Enter your private thread (auto-named with a numerical string)
+3. Access media commands with `/`:
+```bash
+/text-to-video    # Generate videos from text
+/text-to-image    # Create images from descriptions
+/image-to-text    # Convert images to text descriptions
+```
 
-### Understanding Private Threads
+## Available Models
 
-- **Private** thread creation messages are ephemeral (only visible to the user creating the ModelChat thread)
-- Your active threads can be found by checking **⁠model-chat**
-- The channel menu will show a blinking dot as **⁠model-chat** threads are private by default
-- Access channel names under active threads via right-click (context menu)
-- Additional users must be invited using the @ symbol once the model loads in the channel
+### Multimodal Support
+* **Video Processing**: Nova Lite/Pro
+* **Video Generation**: Reels
+* **Image Generation**: Canvas
+* **Vision Models**: Claude Sonnet, Haiku 3, Llama 11b/90b
+
+## Working with Media
+
+### Video Generation (Reels)
+```bash
+/text-to-video    # Generate 6-second videos
+/image-to-video   # Convert static images to videos
+```
+* Processing time: 5-6 minutes
+* Character limit: 512 characters
+
+### Image Generation (Canvas)
+```bash
+/text-to-image    # Create images from descriptions
+```
+* Processing time: 1-2 minutes
+* Character limit: 1,024 characters
+
+### Video Understanding (Nova)
+1. Upload your video
+2. Provide content description
+3. Specify desired output
+4. Submit for processing
+
+### Vision Models (Claude/Llama)
+1. Upload your image
+2. Add content description
+3. Specify analysis requirements
+4. Wait for model response
+
+## Thread Management
+
+### Private Threads
+* Messages are ephemeral (visible only to creator)
+* Access threads via **#model-chat**
+* Look for blinking dot in channel menu
+* Right-click to view channel names
+* Invite others using @ mentions
 
 ### System Prompts
+* Optional thread naming feature
+* Defines model purpose/role
+* Available for text/vision models
+* Set via `system_prompt` parameter
 
-Select System Prompt for `text/vision` models and type the `system_prompt` to define the model's purpose and/or Role. This action will name the thread. *Optional*
+## Best Practices
 
-### Media Generation Guidelines
+### Workflow Optimization
+* Use multimodal models for context preparation
+* Pre-prompt with image or text context
+* Consider model-specific strengths
+* Mind character limits for each type
 
-#### Image and Video Input
+### Queue Management
+* Requests processed in order
+* Include cooldown periods
+* Check queue status before submitting
+* Use help commands for guidance
 
-We currently support the following multimodal models: Nova Lite/Pro, Reels & Canvas, Claude Sonnet, Haiku 3 & Llama 11b/90b
+## Support Options
 
-#### Image and Video Input
+### Getting Help
+* Direct message `@StreamPod AI`
+* Visit `#general-support` channel
+* Use `/` commands for help documentation
+* Check model-specific guidelines
 
-For Nova Lite/Pro (video-to-text):
+### Common Solutions
+* Respect character limits
+* Allow sufficient processing time
+* Use appropriate models for tasks
+* Follow upload-then-prompt sequence
 
-- First, upload the video
-- Provide a brief description of the video content on the prompt
-- Prompt the model with the desired output
+## Advanced Tips
 
-For Reels (text-to-video):
+### Model Selection
+* Choose based on media type
+* Consider processing time needs
+* Review character limitations
+* Check multimodal capabilities
 
-- Use `/text-to-video` to generate 6 seconds of video
-- Use `/image-to-video` to convert images to videos
-- Videos might take 5-6 minutes to generate
-
-For Canvas (text-to-image):
-
-- Use `/text-to-image` to generate images from text descriptions
-- Depending on the amount of Images, generations might take 1-2 minutes to generate
-
-For Claude and Llama (multimodal vision models):
-
-- First, upload the image
-- Provide a brief description of the image content on the prompt
-- Prompt the model with the desired output
-
-#### Character Limits
-
-- Image generation: Maximum 1024 characters
-- Video generation: Maximum 512 characters
-
-#### Model-Specific Notes
-
-- For video understanding, use Nova Lite or Nova Pro Models
-- For media generation workflows, we recommend pre-prompting a multimodal model (Claude, Llama) with image or text context
-
-### Important Notes
-
-- Mediagen processes requests in an orderly queue which include cool down periods 
-- Reference help commands under `/` commands for detailed guidance
-
-### Need Support?
-
-- DM **@StreamPod AI**
-- Ask questions in **⁠general-support**
+### Content Guidelines
+* Provide clear descriptions
+* Include relevant context
+* Follow upload procedures
+* Monitor processing status
