@@ -56,9 +56,9 @@
       "pages": [
         "overview",
         "quickstart",
-        "modelChat",
-        "mediaGen",
-        "audioGen"
+        "modelchat",
+        "mediagen",
+        "audiogen"
       ]
     }
   ],
