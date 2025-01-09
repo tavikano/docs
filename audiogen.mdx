@@ -1,79 +1,78 @@
-# Voice Channel Commands Guide
+# Voice Channel Guide
 
-## Quick Start
+## Getting Started
 
-### Create and Use Voice Channel
-1. `/createvoice` - Creates a private voice channel
-2. Click the **Open Chat** bubble next to your new channel
-3. `/talk` - Begin voice interaction (5-minute session limit)
-4. `/leave` - End session when finished
+### Quick Setup
+1. Navigate to the [#audio-chat](https://discord.com/channels/1245569640265023572/1316766276051406888) channel
+2. Create your channel with `/createvoice`
+3. Join by clicking the **Open Chat** bubble
+4. Start interaction with `/talk` (5-minute sessions)
+5. End your session using `/leave`
 
-## Voice Channel Features
+### Key Features
+* **Private Channels**: Each voice channel is created under the "audio" category with unique alphanumeric names
+* **Access Control**: Only creators can manage channels and invite others by default
+* **Real-time Interaction**: Enjoy interruptible voice sessions with text chat transcripts
+* **Voice Agent Integration**: Engage with voice agents through simple commands
 
-### Privacy and Access
-- Creates a **private** voice channel under the "audio" category
-- Channel name is automatically generated (alphanumeric)
-- Only channel creator can access, invite and manage by default
-- Additional users must be invited explicitly
+## Command Reference
 
-### Capabilities
-- Real-time voice interaction
-- Interuptible voice sessions
-- Voice messaging
-- Speech interaction
-- Text chat transcripts
-- Voice agent engagement via `/talk`
+### Voice Channel Management
 
-## Command Workflows
+#### Creating Your Channel
+```bash
+/createvoice    # Creates a private voice channel
+/talk           # Initiates a 5-minute voice session
+/leave          # Ends the current session
+```
 
-### Voice Agent Flow
-1. Go to <a href="https://discord.com/channels/1245569640265023572/1316766276051406888"> `#audio-chat` </a> channel
-2. `/createvoice` - Initialize channel
-3. Click **Join Voice** button
-4. `/talk` - Begin Voice Agent Interaction
-5. `/leave` - End session
+#### Inviting Others
+* Use @ mentions in the text chat to invite specific users
+* Invited users gain access to voice agent interactions
+* All conversations are automatically transcribed
 
-### Sound Effects (SFX) Flow
-1. Create private thread:
-   - Use Modelchat's private thread with the `/model` command
-2. Generate audio:
-   - Use `/text_to_sfx`
-   - Set `duration` (default: 2s, max: 20s)
-   - Provide description for sound/music generation
+### Special Features
 
+#### Sound Effects (SFX) Generation
+1. Create a private thread using `/model`
+2. Generate audio with `/text_to_sfx`
+   * Set duration (2s default, 20s maximum)
+   * Provide detailed sound/music description
 
-### Speech-to-Text Transcriptions Flow
-1. Create private thread:
-   - Use Modelchat's private thread with the `/model` command
-   - Use `/transcribe` and choose the source language to convert audio to text(defaults to English)
-   - Returns text transcript along timed text caption VTT file  of the audio
-
-## Important Notes
-
-### Recommendations
-- Enable Discord's voice activity detection in settings
-- Use `/leave` command to properly end sessions
-- Unused capacity counts against your plan until `/leave` is used
-
-### Channel Management
-- Channel creation is instant
-- Private confirmation message includes channel name
-- Automatic placement in "audio" category
-- Text chat room maintains conversation transcripts
-
-### Troubleshooting
-
-If you see: "This command can only be used in a server!"
-- Solution: Use commands in `#audio-chat` channel, not in DMs
-
-### Inviting Users
-- Use @ mentions in the text chat room
-- Invited users can access voice agent chat
-- All conversations are transcribed in the text chat
+#### Speech-to-Text Transcription
+1. Start a private thread with `/model`
+2. Use `/transcribe` command
+   * Select source language (defaults to English)
+   * Receive text transcript and timed VTT captions
 
 ## Best Practices
-- Use `/leave` to end sessions properly
-- Invite users using @ mentions
-- If session exceeds 5 minutes, use `/talk` to start a new session
-- Mind your surroundings for voice clarity
-- Mind your language and tone for respectful interactions
+
+### Voice Session Management
+* Always use `/leave` to properly end sessions
+   * Unused capacity counts against your plan
+   * Sessions automatically end after 5 minutes
+* Start new sessions with `/talk` if needed
+
+### Audio Quality Tips
+* Enable Discord's voice activity detection
+* Choose a quiet environment for clear audio
+* Maintain professional language and tone
+* Test audio settings before important sessions
+
+## Troubleshooting
+
+### Common Issues
+
+#### "This command can only be used in a server!"
+* Solution: Execute commands in #audio-chat channel, not in DMs
+
+#### Channel Access
+* Verify channel creation confirmation message
+* Check "audio" category for your channel
+* Confirm invited users have proper permissions
+
+### Channel Lifecycle
+* Creation is instantaneous
+* Private confirmation includes channel name
+* Text chat maintains conversation history
+* Automatic placement in designated category

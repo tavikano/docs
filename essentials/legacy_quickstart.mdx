@@ -1,0 +1,104 @@
+---
+title: 'Quickstart'
+description: 'Start building generative AI worklows with StreamPod AI'
+---
+
+# StreamPod Quickstart Guide
+
+## Getting Started
+
+#### Read the guidelines and follow the rules
+
+1. Read the <a href="https://discord.com/channels/1245569640265023572/1295991237064527873">`#rules`</a> channel
+2. Follow the guidelines and rules for using StreamPod AI
+
+### Creating a Private Chat
+
+1. Navigate to the <a href="https://discord.com/channels/1245569640265023572/1311515052385239061"> `#⁠model-chat`</a> channel
+2. Type `/model` to select your preferred AI model
+3. Enter the newly created private thread
+   - Thread names are random.
+   - Only the user can see the thread creation message(ephemeral threads)
+   - Additional users must be invited using the @ symbol
+
+### Basic Commands
+
+#### Text Generation
+- Use `/model` to access text-based models
+- Optionally set a system prompt to define the model's role and behavior
+- Model might refuse to load if the system prompt exceeds the character limit or if the system prompt does not meet the guidelines 
+
+#### Media Generation
+- `/text-to-image`: Generate images from text descriptions
+- `/text-to-video`: Create videos from text prompts
+- `/image-to-video`: Convert images to videos
+- `/text-to-sfx`: Generate sound effects and music
+- '/transcribe': Convert audio to text and captions
+
+#### Voice Agent Features
+- `/createvoice`: Initialize voice chat
+- `/talk`: Begin voice interaction
+- `/leave`: Exit voice chat
+
+## Usage Guidelines
+
+### Text and Vision Models
+
+1. Select your model with `/model`
+2. Set an optional system prompt plus optional parameterized settings and enter the private thread
+3. Invite additional users using the @ symbol
+4. Enter your prompt or upload media
+5. Wait for the model's response
+6. Follow up with additional prompts or commands as needed
+
+### Media Generation
+
+#### Image Generation
+- Maximum prompt length: 1024 characters
+- Maximum image count: 3
+- Minimum image size: 320x320
+- Maximum image size: 2816x1536
+- Maximum Image Resolution: 4.19 million pixels (that is, 2048x2048, 2816x1536)
+
+- Pre-prompting supported by models: Claude, Llama, and specialized Vision models
+
+#### Video Generation
+- Maximum prompt length: 512 characters
+- Image-to-video requirements:
+  - Resolution: 1280x720
+  - Format: JPEG or PNG (non-transparent)
+  - Compression recommended
+
+### Best Practices
+
+- For media generation, pre-prompt multimodal models with context and specific details about the desired output. Details such as the character length, image count, shot type and resolution are crucial for optimal results.
+- Use system prompts to guide the model's role and behavior
+- Invite additional users to private threads using the @ symbol within the private thread
+- Image generation is parameterized by the model's input requirements and guidelines, including character limits. 
+- Use the image generator's parameters such as resolution, image count, prompt strength, and other model-specific parameters to optimize the output quality
+
+- Keep track of your active threads in `#⁠model-chat`
+- Reference help commands for detailed guidance:
+  - `/model_help`: Text model assistance
+  - `/media_help`: Media generation help
+  - `/audio_help`: Audio feature support
+
+## Getting Help
+
+If you need assistance:
+- Use the appropriate `/` help commands for specific features
+- Ask questions in <a href="https://discord.com/channels/1245569640265023572/1295950195439177748">`#⁠general-support`</a>
+- Contact `@StreamPod AI` via DM using the @ symbol
+- email us at support@streampod.ai
+
+## Advanced Tips
+
+- Use the channel menu to track private threads (indicated by a blinking dot)
+- Access thread names through the context menu (right-click)
+- For video understanding tasks, specifically use Nova Lite or Nova Pro models
+- Remember that all video and image generation requests are processed in a queue system and include workflow analytics
+- Use `/leave` to properly end voice chat sessions and avoid unnecessary resource consumption
+- Models might refuse to process requests if the prompt exceeds the character limit or if the model is busy processing other requests
+- Models might refuse to process requests if the prompt does not follow the model's input requirements and guidelines
+- To avoid rate limits we recommend using lower parameter count models(Llama 1b & 3b) for general text generation tasks and higher parameter count models for specialized tasks such as multilingual translation and summarization tasks
+- Lower parameter count models might hallucinate often or generate irrelevant content if the prompt is not specific enough or if the prompt is too vague
