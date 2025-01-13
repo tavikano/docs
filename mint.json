@@ -25,7 +25,7 @@
   ],
   "topbarCtaButton": {
     "name": "Join",
-    "url": "https://discord.com/invite/VcFM5VRnBH"
+    "url": "https://streampod.io/discord"
   },
   "tabs": [
     {
@@ -42,7 +42,7 @@
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://discord.com/invite/VcFM5VRnBH"
+      "url": "https://streampod.io/discord"
     },
     {
       "name": "Blog",
@@ -63,7 +63,7 @@
     }
   ],
   "footerSocials": {
-    "discord": "https://discord.com/invite/VcFM5VRnBH",
+    "discord": "https://streampod.io/discord",
     "youtube": "https://www.youtube.com/@StreamPods",
     "linkedin": "https://www.linkedin.com/company/streampods", 
     "facebook": "https://www.facebook.com/profile.php?id=61566246435555",
