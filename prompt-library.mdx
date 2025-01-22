@@ -1,0 +1,237 @@
+---
+title: "Prompt Library"
+description: "A comprehensive collection of prompts for various AI modalities and use cases"
+---
+
+# AI Prompt Library
+
+This library provides a curated collection of prompts for different AI modalities and use cases. Each section includes example prompts, best practices, and guidance for optimal results.
+
+## Text-to-Text Reasoning
+
+Text-to-text reasoning involves generating meaningful textual responses based on input text.
+
+```typescript
+// Example prompt template
+const textReasoningPrompt = `
+Analyze the following text and provide a detailed response:
+[Input Text]
+
+Consider the following aspects:
+- Key themes and concepts
+- Logical connections
+- Supporting evidence
+- Potential implications
+
+Provide a structured analysis addressing these points.
+`
+```
+
+## Text-to-Video Generation
+
+Transform textual descriptions into dynamic video content.
+
+```typescript
+// Example prompt template
+const textToVideoPrompt = `
+Generate a video based on the following description:
+[Scene Description]
+
+Specifications:
+- Duration: [Defaults to 6 seconds]
+- Style: [visual style]
+- Key elements: [list important elements]
+- Motion: [describe movement/transitions]
+- Atmosphere: [describe mood/tone]
+`
+```
+
+## Image-to-Video Generation
+
+Create video content from static images.
+
+```typescript
+// Example prompt template
+const imageToVideoPrompt = `
+Transform this image into a video sequence:
+[Image Input]
+
+Parameters:
+- Animation style: [specify style]
+- Duration: [Defaults to 6 seconds]
+- Motion path: [describe movement]
+- Transition effects: [specify effects]
+- Additional elements: [describe any additions]
+`
+```
+
+## Text-to-Image Generation
+
+Generate visual content from textual descriptions.
+
+```typescript
+// Example prompt template
+const textToImagePrompt = `
+Create an image based on this description:
+[Detailed Description]
+
+Specifications:
+- Style: [artistic style]
+- Composition: [layout details]
+- Color scheme: [color preferences]
+- Lighting: [lighting conditions]
+- Focus elements: [key subjects]
+`
+```
+
+## Image-to-Text Understanding
+
+Extract meaningful descriptions and insights from images.
+
+```typescript
+// Example prompt template
+const imageToTextPrompt = `
+Analyze this image and provide:
+[Image Input]
+
+1. Detailed description
+2. Key elements identified
+3. Context analysis
+4. Relevant attributes
+5. Emotional tone/mood
+`
+```
+
+## Video-to-Text Understanding
+
+Convert video content into detailed textual descriptions.
+
+```typescript
+// Example prompt template
+const videoToTextPrompt = `
+Analyze this video sequence and provide:
+[Video Input]
+
+Generate:
+1. Scene-by-scene description
+2. Action sequence analysis
+3. Key event timeline
+4. Character/object tracking
+5. Environmental context
+`
+```
+
+## Text-to-Sound Effects (SFX) Generation
+
+Create appropriate sound effects based on textual descriptions.
+
+```typescript
+// Example prompt template
+const textToSFXPrompt = `
+Generate sound effects based on:
+[Scene/Action Description]
+
+Parameters:
+- Sound type: [specify type]
+- Duration: [length]
+- Intensity: [level]
+- Environmental context: [setting]
+- Timing: [synchronization points]
+`
+```
+
+## Text-to-Music Generation
+
+Transform textual descriptions into musical compositions.
+
+```typescript
+// Example prompt template
+const textToMusicPrompt = `
+Create music based on:
+[Description/Mood/Style]
+
+Specifications:
+- Genre: [specify genre]
+- Tempo: [specify BPM]
+- Mood: [emotional tone]
+- Instruments: [specify instruments]
+- Duration: [length]
+`
+```
+
+## Text-to-Speech Generation
+
+Convert text into natural-sounding speech.
+
+```typescript
+// Example prompt template
+const textToSpeechPrompt = `
+Convert this text to speech:
+[Input Text]
+
+Voice parameters:
+- Voice type: [specify voice]
+- Speaking rate: [speed]
+- Pitch: [level]
+- Emotion: [tone]
+- Emphasis points: [specify words]
+`
+```
+
+## Timed Text Transcription (Captions)
+
+Generate accurate, timed captions for media content.
+
+```typescript
+// Example prompt template
+const timedTranscriptionPrompt = `
+Create timed captions for:
+[Media Input]
+
+Requirements:
+- Timing accuracy: [precision level]
+- Format: [caption format]
+- Speaker identification: [if needed]
+- Non-speech elements: [sound descriptions]
+- Language: [specify language]
+`
+```
+
+## Real-time Multilingual Voice Translation and Transcription
+
+Perform simultaneous translation and transcription of spoken content.
+
+```typescript
+// Example prompt template
+const realtimeTranslationPrompt = `
+Process speech for translation:
+[Audio Input]
+
+Settings:
+- Source language: [specify]
+- Target language(s): [specify]
+- Output format: [format type]
+- Speaker tracking: [enabled/disabled]
+- Cultural adaptation: [level]
+`
+```
+
+## Best Practices
+
+1. **Be Specific**: Include detailed parameters and requirements in your prompts
+2. **Use Context**: Provide relevant background information when needed
+3. **Set Clear Constraints**: Define boundaries and limitations
+4. **Include Examples**: When possible, reference desired output styles
+5. **Iterate**: Refine prompts based on results for optimal output
+
+## Tips for Optimal Results
+
+- Test prompts with various inputs to ensure consistency
+- Maintain clear and structured prompt formatting
+- Include error handling and fallback options
+- Consider performance implications and resource usage
+- Document successful prompt patterns for future reference
+
+---
+
+This prompt library serves as a starting point for implementing AI capabilities across different modalities. Adapt and customize these templates based on your specific use case and requirements.

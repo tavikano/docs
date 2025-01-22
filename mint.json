@@ -29,8 +29,8 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Promp Library",
+      "url": "prompt-library"
     }
   ],
   "anchors": [
