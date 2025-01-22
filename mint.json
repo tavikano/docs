@@ -29,7 +29,7 @@
   },
   "tabs": [
     {
-      "name": "Promp Library",
+      "name": "Prompt Library",
       "url": "prompt-library"
     }
   ],
@@ -59,6 +59,17 @@
         "modelchat",
         "mediagen",
         "audiogen"
+      ]
+    },
+    {
+      "group": "Prompt Library",
+      "pages": [
+        "prompt-library",
+        "prompt-library/overview",
+        "prompt-library/quickstart",
+        "prompt-library/modelchat",
+        "prompt-library/mediagen",
+        "prompt-library/audiogen"
       ]
     }
   ],
