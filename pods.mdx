@@ -1,11 +1,11 @@
-## Pods - Orchestrate Complex Agentic Workflows
+## StreamPod Agent - Orchestrate Complex Agentic Workflows
 
 Pods are a set of agentic workflows triggered by using the `/pod` command within Discord. Follow these steps to get started:
 
 1. **Join a Discord Server**: Ensure you are a member of a Discord server where the bot is installed.
-2. **Use the `/pod` Command**: In any text channel, type `/pod` followed by a prompt you want the agents to work. For example, `/pod prompt: Make a Table of Sakura Season in past 10 years in Tokyo and add Future Projections?` to initiate a workflow.
-3. **Follow Prompts**: The bot will guide you through the necessary steps to complete the workflow. Follow the prompts and provide any required information.
-4. **Complete the Workflow**: Once all steps are completed, the bot will confirm the successful execution of the workflow.
+2. **Use the `/pod` Command**: In any text channel, type `/pod` followed by a prompt you want the agents to work. For example, `/pod prompt: Make a Table of Sakura Season in past 10 years in Tokyo and add Future Projections` to initiate a agent run.
+3. **Follow Prompts**: The bot will guide you through the necessary steps to complete the agent run. Follow the prompts and provide any required information.
+4. **Complete the agent Run**: Once all steps are completed, the bot will confirm the successful execution of the agent run.
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ StreamPod Agent is Discord bot for interacting with AI agents and models through
 
 # Commands
 
-/pod [prompt]
+`/pod [prompt]`
 
 Submit a prompt to the active AI agent.
 
@@ -37,20 +37,19 @@ Formatted response with code blocks
 Execution metrics
 Truncated logs
 Cost estimation
-/setmodel [model_id]
+`/setmodel [model_id]`
 
 Switch the active AI model (autocomplete supported).
 
 Example:
 
-```bash
-/setmodel model_id: bedrock/anthropic.claude-3-haiku-20240307-v1:0
-/listmodels
-```
+`/setmodel model_id: bedrock/anthropic.claude-3-haiku-20240307-v1:0`
+`/listmodels`
+
 
 Show all available models.
 
-/setagent [agent_type]
+`/setagent [agent_type]`
 
 Switch agent type (autocomplete supported).
 
@@ -58,7 +57,7 @@ Options:
 
 CodeAgent
 ToolCallingAgent
-/listagents
+`/listagents`
 
 Show available agent types.
 
