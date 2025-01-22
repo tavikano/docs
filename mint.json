@@ -58,7 +58,8 @@
         "quickstart",
         "modelchat",
         "mediagen",
-        "audiogen"
+        "audiogen",
+        "pods"
       ]
     },
     {
